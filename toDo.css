@@ -1,18 +1,19 @@
+
 body {
     background-color: #d5d5d5;
-    width: 600px;
     margin: 0 auto;
     padding: 0;
-    font-size: 28px;
+    font-size: 18px;
 }
 h1 {
     height: auto;
     padding: 15px;
     margin-bottom: 0;
-    margin-left: 40px;
+    margin-left: 10%;
 }
 #container {
     background-color: rgb(225, 219, 141);
+    height: 100%;
 }
 li {
     color: rgb(39, 39, 39);
@@ -33,9 +34,9 @@ li {
     width: 2px;
     float: left;
     height: 800px;
-    margin-left: 40px;
+    margin-left: 10%;
 }
 .done {
-    color: rgb(110, 110, 110);
+    color: rgb(39, 39 39);
     text-decoration: line-through;
 }
