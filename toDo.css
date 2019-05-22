@@ -35,3 +35,7 @@ li {
     height: 800px;
     margin-left: 40px;
 }
+.done {
+    color: rgb(110, 110, 110);
+    text-decoration: line-through;
+}

@@ -1,17 +1,14 @@
 //input to add new li
 
-//delete items
+//cross off items
 $('li').on('click', function() {
-    //if li is gray turn black
-    if($(this).css('color') === 'rgb(39, 39, 39)') {
-        $(this).css({
-            color: 'rgb(100, 100, 100)',
-            textDecoration: 'line-through'
-        })
-    } else {
-        $(this).css({
-            color: 'rgb(39, 39, 39)',
-            textDecoration: 'none'
-        })
-    }
+    $(this).toggleClass('done');
+})
+
+//delete items
+$('span').on('click', function(e) {
+    $(this).parent().fadeOut(800, function() {
+        $(this).remove();
+    })
+    e.stopPropagation();
 })
