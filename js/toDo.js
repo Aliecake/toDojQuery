@@ -10,14 +10,14 @@ $('ol').on('click', 'span', function(e) {
         $(this).remove();
     })
     e.stopPropagation();
-})
+});
 //input to add new li
 $('input[type="text"]').on('keypress', function(e){
     if(e.which === 13) {
-        $(this).attr('disabled', 'disabled')
-        let text = $.parseHTML($(this).val())
-        $('ol').append('<li><span>X</span> ' + text[0].textContent + '</li>');
-        $(this).removeAttr('disabled')
-        $(this).val('')
+        $(this).attr('disabled', 'disabled');
+        let text = $.parseHTML($(this).val());
+        $('ol').append('<li><span><i class="fas fa-trash-alt"></i></span> ' + text[0].textContent + '</li>');
+        $(this).removeAttr('disabled');
+        $(this).val('');
     }
-})
+});
